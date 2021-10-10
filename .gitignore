@@ -1,0 +1,6 @@
+.vscode/*
+__pycache__/*
+scripts/
+results/
+*/__pycache__/*
+*/*/__pycache__/*
