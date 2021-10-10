@@ -17,13 +17,16 @@ We use the dataset of
 |         S1_Directions_1.54138969_000026.jpg
 |         ...
 ```
-* LSP : 
+* LSP : https://drive.google.com/uc?id=1R0JNZGs833f8y0MnsyU_ATkXQZ5ooW4z
 ```
 ├─LSP
 |   ├─images
 |         im0001.jpg
 |         im0002.jpg
 |         ...
+|   ├─ masks
+|         0_im0001.jpg
+|         0_im0002.jpg
 ```
 * MPII Images : http://human-pose.mpi-inf.mpg.de/#download
 ```
@@ -70,13 +73,17 @@ We use the dataset of
 |           im0001_segmentation.png
 |           ...
 ```
-* YOUTUBE Collection : 
+* YOUTUBE Collection : https://drive.google.com/uc?id=1PDr4QU9B6rUzBqYySQn4MKu0-Aeeik-V
 ```
 ├─YOUTUBE Collection
 |   ├─video1
 |   |   ├─imageFiles
 |           frame000350.jpg
 |           frame000775.jpg
+|           ...
+|   |   ├─masks
+|           0_frame000350.jpg
+|           0_frame000775.jpg
 |           ...
 ```
 Download npz file, VIBE_data and other data.
@@ -98,6 +105,11 @@ We don't use LSP-extension.
 ## Extracting images from videos
 ```
 python preprocessing.py
+```
+
+## Pretrained file
+```
+source scripts/pretrained.sh
 ```
 
 ## Training
