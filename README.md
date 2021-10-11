@@ -8,7 +8,9 @@ The code needs the following libraries:
 * PyTorch 1.4.0
 
 ## Data Preparation
-We use the dataset of 
+We use the dataset of Human3.6M, LSP, MPII, COCO 2014, MPI-INF-3DHP and YOUTUBE Collection for training, and Human3.6M, LSP 3DPW and UPI_S1H for testing.
+We attach the google drive link of Mask rcnn results.
+
 * Human 3.6M : http://vision.imar.ro/human3.6m/description.php
 * Human 3.6M Mask : https://drive.google.com/uc?id=12AkKZ6YSALNZgM4KZO3tcbescadln5Hz
 ```
