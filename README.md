@@ -1,4 +1,4 @@
-# Towards Single 2D Image-level Self-supervision for 3D Human Poseand Shape Estimation
+# Towards Single 2D Image-level Self-supervision for 3D Human Pose and Shape Estimation
 
 ## Prerequisties
 The code needs the following libraries:
@@ -10,16 +10,21 @@ The code needs the following libraries:
 ## Data Preparation
 We use the dataset of 
 * Human 3.6M : http://vision.imar.ro/human3.6m/description.php
+* Human 3.6M Mask : https://drive.google.com/uc?id=12AkKZ6YSALNZgM4KZO3tcbescadln5Hz
 ```
-├─Human 3.6M
+├─[Human 3.6M path]
 |   ├─images
 |         S1_Directions_1.54138969_000001.jpg
 |         S1_Directions_1.54138969_000026.jpg
 |         ...
+|   ├─masks
+|         0_S1_Directions_1.54138969_000001.jpg
+|         0_S1_Directions_1.54138969_000026.jpg
+|         ...
 ```
 * LSP : https://drive.google.com/uc?id=1R0JNZGs833f8y0MnsyU_ATkXQZ5ooW4z
 ```
-├─LSP
+├─[LSP path]
 |   ├─images
 |         im0001.jpg
 |         im0002.jpg
@@ -27,26 +32,38 @@ We use the dataset of
 |   ├─ masks
 |         0_im0001.jpg
 |         0_im0002.jpg
+|         ...
 ```
 * MPII Images : http://human-pose.mpi-inf.mpg.de/#download
+* MPII masks: https://drive.google.com/uc?id=1vU3_oOzOhGWN4M4kQApzx2jCrv3DIlAh
 ```
-├─MPII
+├─[MPII path]
 |   ├─images
-|         images/000001163.jpg
-|         images/000003072.jpg
+|         000001163.jpg
+|         000003072.jpg
+|         ...
+|   ├─masks
+|         0_000001163.jpg
+|         0_000003072.jpg
 |         ...
 ```
 * COCO 2014 : https://cocodataset.org/#download
+* COCO 2014 masks: https://drive.google.com/uc?id=190zdC5bG_WWzq4xXOhuCOy8NMfH_wfIv
 ```
-├─COCO
+├─[COCO path]
 |   ├─train2014
-|         COCO_train2014_000000044474.jpg
-|         COCO_train2014_000000420049.jpg
+|         COCO_train2014_000000000086.jpg
+|         COCO_train2014_000000000529.jpg
+|         ...
+|   ├─masks
+|         0_COCO_train2014_000000000086.jpg
+|         0_COCO_train2014_000000000529.jpg
 |         ...
 ```
 * MPI_INF_3DHP : http://vcai.mpi-inf.mpg.de/3dhp-dataset/
+* MPI_INF_3DHP masks: https://drive.google.com/uc?id=1XwK_TDb1YOrbw4YhJkC_2S3x_RdN_Dqz
 ```
-├─MPI_INF_3DHP
+├─[MPI_INF_3DHP path]
 |   ├─S1
 |   |   ├─Seq1
 |   |   |   ├─imageFrames
@@ -54,10 +71,16 @@ We use the dataset of
 |                   frame_000001.jpg
 |                   frame_000011.jpg
 |                   ...
+|   |   |   ├─masks
+|   |   |   |   ├─video_0
+|                   0_frame_000001.jpg
+|                   0_frame_000011.jpg
+|                   ...
+
 ```
 * 3DPW : https://virtualhumans.mpi-inf.mpg.de/3DPW/evaluation.html
 ```
-├─3DPW
+├─[3DPW path]
 |   ├─imageFiles
 |   |   ├─downtown_arguing_00
 |             image_00000.jpg
@@ -66,7 +89,7 @@ We use the dataset of
 ```
 * UPI_S1H : https://files.is.tuebingen.mpg.de/classner/up/#datasets
 ```
-├─UPI_S1H
+├─[UPI_S1H path]
 |   ├─data
 |   |   ├─lsp
 |           im0001_part_segmentation.png
@@ -75,7 +98,7 @@ We use the dataset of
 ```
 * YOUTUBE Collection : https://drive.google.com/uc?id=1PDr4QU9B6rUzBqYySQn4MKu0-Aeeik-V
 ```
-├─YOUTUBE Collection
+├─[YOUTUBE Collection path]
 |   ├─video1
 |   |   ├─imageFiles
 |           frame000350.jpg
@@ -86,6 +109,7 @@ We use the dataset of
 |           0_frame000775.jpg
 |           ...
 ```
+
 Download npz file, VIBE_data and other data.
 ```
 source scripts/prepare_data.sh
