@@ -9,10 +9,10 @@ The code needs the following libraries:
 
 ## Data Preparation
 We use the dataset of Human3.6M, LSP, MPII, COCO 2014, MPI-INF-3DHP and YOUTUBE Collection for training, and Human3.6M, LSP 3DPW and UPI_S1H for testing.
-We attach the google drive link of Mask rcnn results.
+We attach the google drive link of mask-rcnn results.
 
 * Human 3.6M : http://vision.imar.ro/human3.6m/description.php
-* Human 3.6M Mask : https://drive.google.com/uc?id=12AkKZ6YSALNZgM4KZO3tcbescadln5Hz
+* Human 3.6M mask-rcnn results : https://drive.google.com/uc?id=12AkKZ6YSALNZgM4KZO3tcbescadln5Hz
 ```
 ├─[Human 3.6M path]
 |   ├─images
@@ -37,7 +37,7 @@ We attach the google drive link of Mask rcnn results.
 |         ...
 ```
 * MPII Images : http://human-pose.mpi-inf.mpg.de/#download
-* MPII masks: https://drive.google.com/uc?id=1vU3_oOzOhGWN4M4kQApzx2jCrv3DIlAh
+* MPII mask-rcnn results: https://drive.google.com/uc?id=1vU3_oOzOhGWN4M4kQApzx2jCrv3DIlAh
 ```
 ├─[MPII path]
 |   ├─images
@@ -50,7 +50,7 @@ We attach the google drive link of Mask rcnn results.
 |         ...
 ```
 * COCO 2014 : https://cocodataset.org/#download
-* COCO 2014 masks: https://drive.google.com/uc?id=190zdC5bG_WWzq4xXOhuCOy8NMfH_wfIv
+* COCO 2014 mask-rcnn results: https://drive.google.com/uc?id=190zdC5bG_WWzq4xXOhuCOy8NMfH_wfIv
 ```
 ├─[COCO path]
 |   ├─train2014
@@ -63,7 +63,7 @@ We attach the google drive link of Mask rcnn results.
 |         ...
 ```
 * MPI_INF_3DHP : http://vcai.mpi-inf.mpg.de/3dhp-dataset/
-* MPI_INF_3DHP masks: https://drive.google.com/uc?id=1XwK_TDb1YOrbw4YhJkC_2S3x_RdN_Dqz
+* MPI_INF_3DHP mask-rcnn results: https://drive.google.com/uc?id=1XwK_TDb1YOrbw4YhJkC_2S3x_RdN_Dqz
 ```
 ├─[MPI_INF_3DHP path]
 |   ├─S1
