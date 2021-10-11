@@ -423,9 +423,9 @@ class Trainer():
                     
                     loss_all += joints_loss
 
-                self.losses_joints.update(joints_loss.item(), num_data)
-                self.train_MPJPE.update(mpjpe.item(), num_data)
-                self.train_PA_MPJPE.update(pa_mpjpe.item(), num_data)
+                    self.losses_joints.update(joints_loss.item(), num_data)
+                    self.train_MPJPE.update(mpjpe.item(), num_data)
+                    self.train_PA_MPJPE.update(pa_mpjpe.item(), num_data)
 
                 self.HMR_optimizer_all.zero_grad()
                 self.losses_total.update(loss_all.item(), batch_size)
